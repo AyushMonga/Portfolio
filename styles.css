@@ -426,14 +426,27 @@ footer {
 
     #navbar ul {
         flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(193, 154, 107, 0.95);
+        backdrop-filter: blur(20px);
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-top: none;
+        z-index: 1000;
     }
 
     #navbar li {
-        margin: 5px 0;
+        margin: 0;
+        width: 100%;
     }
 
     #navbar a {
-        padding: 12px 15px;
+        padding: 15px 20px;
+        border-radius: 0;
     }
 
     .section {
